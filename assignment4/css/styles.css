@@ -1,0 +1,120 @@
+/*************************************
+
+  Universal Styling
+
+**************************************/
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+main {
+  max-width: 1920px;
+  background: white;
+  padding: 4rem; /* adds spacing inside the container */
+}
+
+p {
+  font-size: 16px;
+  line-height: 150%;
+}
+
+header {
+  text-align: center;
+  background: #d17519;
+  padding: 10px;
+  position: fixed;
+  width: 100%;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+  width: 100px;
+}
+
+nav a:hover {
+  color: gray;
+  background: #333;
+  transition: .5s;
+}
+
+nav a:active {
+  color: red;
+}
+
+nav li {
+  display: inline;
+  font-size: 24px;
+  float: center;
+}
+
+.active {
+  font-weight: bold;
+  font-style: italic;
+}
+
+footer {
+  background: #333;
+  text-align: center;
+  color: white;
+  padding: 10px, 0;
+}
+
+/*************************************
+
+  About Page Styling
+
+**************************************/
+.sky {
+  position: relative;
+  height: 40%;
+  background: skyblue;
+}
+
+.star-left,
+.star-middle,
+.star-right {
+  position: absolute;
+}
+
+.star-left {
+  width: 50px;
+  top: 1200px;
+  left: 100px;
+  opacity: .5;
+  animation: starfall 10s ease-out infinite;
+  transform: rotate(60deg);
+  z-index: 100;
+}
+
+.star-middle {
+  width: 75px;
+  top: 700px;
+  left: 400px;
+  opacity: .7;
+  animation: starfall 10s linear infinite;
+  transform: rotate(120deg);
+  z-index: 100;
+}
+
+.star-right {
+  width: 100px;
+  top: 900px;
+  left: 800px;
+  opacity: .3;
+  animation: starfall 10s linear infinite;
+  transform: rotate(90deg);
+  z-index: 100;
+}
+
+@keyframes starfall {
+  from {
+    top: -100px;
+  }
+  to {
+    bottom: 1180px;
+  }
+}

@@ -1,0 +1,60 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+article, aside, details, figcaption, figure, footer, header, main, nav, section, summary {
+    display:block;
+}
+
+
+
+.one {
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* GENERAL STYLING NOT RELATED TO POSITIONING */
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+section {
+  background-color: #115195;
+  padding: 1%;
+  color: #ffffff;
+  margin: 1% 0;
+}
+
+article {
+  padding: 1%;
+}
+
+.parent {
+	position: relative;
+}
+
+.one {
+	position: absolute;
+	bottom: 0;
+  background-color: #2573B4;
+}
+
+.two {
+  background-color: #2699A2;
+}
+
+.three {
+  background-color: #4BB29E;
+}

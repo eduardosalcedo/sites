@@ -1,0 +1,94 @@
+.mario {
+  width: 100px;
+  transition: 2s;
+  filter: grayscale(100%);
+}
+
+.mario:hover {
+  filter: grayscale(0%);
+  transition: 2s;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  background: #f2f2f2;
+  padding: 10px 20px;
+  transition: .5s;
+  width: 100px;
+}
+
+nav a:hover {
+  background: #333;
+  color: #f2f2f2;
+  transition: .5s;
+}
+
+.square {
+  width: 400px;
+  height: 400px;
+  background: orange;
+  transition: .5s;
+  position: relative;
+}
+
+.square:hover {
+  animation: movement 5s;
+}
+
+.jaguar {
+  filter: blur(3px) grayscale(100%);
+  transition: .5s;
+}
+
+.jaguar:hover {
+  filter: blur(0px);
+  transition: .5s;
+}
+
+.top-link-section {
+  width: 70px;
+  padding: 70px 50px;
+  border-radius: 50%;
+  background: blue;
+  text-align: center;
+}
+
+.top-link {
+  color: white;
+  text-decoration: none;
+}
+
+.top-link-section:hover{
+  animation: spin .5s forwards linear;
+}
+
+@keyframes movement {
+  from{
+    transform: rotateZ(0deg);
+    background: orange;
+  }
+  to {
+    transform: rotateZ(360deg);
+    background: blue;
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+    background: blue;
+  }
+  50% {
+    transform: rotateX(-180deg) rotateY(180deg) rotateZ(180deg);
+    background: black;
+  }
+  100% {
+    transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+    background: yellow;
+  }
+}

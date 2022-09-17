@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+header {
+  text-align: center;
+  background: #333;
+  padding: 20px 0;
+}
+
+header nav ul li {
+  display: inline;
+}
+
+header nav a {
+  color: white;
+  font-size: 24px;
+  text-decoration: none;
+  margin: 0 20px;
+}
+
+header nav a:hover {
+  color: yellow;
+}
+
+header nav a:active {
+  color: red;
+}
+
+header nav a:visited {
+  color: blue;
+}
+
+.pseudo {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.pseudo p:first-child {
+  color: blue;
+}
+
+.pseudo p:last-child {
+  color: yellow;
+}
+
+.pseudo p:nth-child(2) {
+  color: yellow;
+}
+
+.pseudo p:nth-last-child(4) {
+  color: red;
+}
+
+.pseudo a:first-of-type {
+  color: purple;
+  font-weight: bold;
+}
+
+.pseudo a:last-of-type {
+  color: green;
+  font-weight: bold;
+}
+
+.pseudo p:first-letter {
+  font-size: 24px;
+}
+
+.pseudo p:nth-child(2)::first-letter,
+.pseudo p:nth-child(4)::first-letter {
+  font-size: 24px;
+  font-weight: bold;
+}
+/*
+.pseudo p:first-line {
+  color: grey;
+}
+*/
+/* highlighted text formatting */
+.pseudo p::selection {
+  background: black;
+  color: white;
+}
+
+.pseudo p::before {
+  content: "This is added before each paragraph - ";
+}
+
+.pseudo p::after {
+  content: " - This is added after each paragraph";
+}
+
+/* Something nice to call attention to a paragraph or section */
+.pseudo p:first-of-type::before {
+  content: "READ THIS -> ";
+  background: yellow;
+  font-weight: bold;
+  color: red;
+}

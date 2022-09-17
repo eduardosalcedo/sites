@@ -1,0 +1,128 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+header, nav, aside, article, footer, section, main, figure, figcaption {
+	display:block;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	background-image: url("images/clouds_background.jpg")
+}
+
+#container {
+	width: 85%;
+	margin: auto;
+	background-color: #bdb7b7;
+}
+
+header {
+	background-color: #113f60;
+	padding-bottom: 20px;
+}
+
+h1 {
+	color: #ffffff;
+	text-shadow: 3px 3px #000000;
+	padding: 20px 0 20px 20px;
+}
+
+nav {
+	background-color: #bdb7b7;
+	text-align: center;
+	padding: 10px 0;
+}
+
+nav ul {
+	list-style-type: none;
+}
+
+nav ul li {
+	display: inline;
+	padding: 0 10px;
+}
+
+nav ul li a {
+	color: #af354e;
+}
+
+nav ul li a:hover {
+	text-decoration: none;
+}
+
+main {
+	background-color: #e7e7e7;
+	padding: 3%;
+}
+
+main h2 {
+	color: #af354e;
+	border-bottom: 3px solid #bb8e6d;
+	margin-bottom: 10px;
+}
+
+article {
+	padding-top: 10px;
+}
+
+article figure {
+	float: right;
+	padding-left: 2%;
+	padding-bottom: 5px;
+}
+
+article img {
+	width: 100%;
+	max-width: 300px;
+}
+
+figure {
+	text-align: center;
+}
+
+figcaption {
+	color: #af354e;
+}
+
+article p, aside p {
+	padding: 7px 0;
+}
+
+aside {
+	background-color: #bdb7b7;
+	padding: 3%;
+}
+
+aside img {
+	width: 100%;
+	max-width: 215px;
+}
+
+footer {
+	background-color: #af354e;
+	color: #ffffff;
+	padding: 15px 0;
+	clear: both;
+	text-align: center;
+}
+
+@media (min-width: 850px) {
+	aside {
+		float: right;
+		width: 24%;
+	}
+
+	main {
+	float: left;
+	width: 64%;
+	}
+}
+
+@media (min-width: 1600px) {
+	#container {
+		max-width: 1347px;
+	}
+}
